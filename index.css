@@ -1,0 +1,174 @@
+html, body{
+    background-color: #FFF7B9;
+    font-family: "Google Sans Flex", Arial, Helvetica, sans-serif;
+}
+
+#hero{
+    background-image: url(./img/castle.jpg);
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.048) 100%);
+    z-index: 1;
+}
+
+#navbar .navbar-nav {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+#navbar .nav-link {
+    color: #FFF7B9 !important;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#navbar .navbar-brand {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+}
+
+#navbar img{
+    width: 5vw;
+}
+
+#navbar .icon-right{
+    width: 2vw;
+}
+
+
+/* Start of Project Section */
+#projects{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.774)), url('./img/filter.jfif');
+    z-index: 1;
+}
+
+#projects h1{
+    font-size: 8rem;
+    font-family: "Google Sans Flex", Arial, Helvetica, sans-serif;
+    color: #a70000 !important;
+}
+
+#projects p{
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+    font-family: "Google Sans Flex", Arial, Helvetica, sans-serif;
+    color: #FFF7B9 !important;
+}
+
+.cards {
+    min-height: 350px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.cards::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.205) 100%);
+    z-index: 1;
+}
+
+.cards h3, .cards p {
+    position: relative; 
+    z-index: 2;
+    color: #FFF7B9;
+}
+/* End of Project Section */
+
+
+
+/* Start of About Section */
+#about{
+    background-color: #FFF7B9;
+    min-height: 50vh;
+}
+
+#about h1{
+    font-size: 5.5vw;
+    font-weight: 100;
+    color: black;
+}
+
+#about p{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: black;
+}
+
+.about-img1 { background-image: url('./img/niji.png'); border: 2px solid #FFF7B9; border-radius: 50px; height: 80vh;}
+
+.about{
+
+    /* for background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    /* positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.about-side{
+    padding: 5vw 0px;
+}
+/* End of About Section */
+
+/* footer start */
+
+footer{
+    padding: 50px 25px;
+}
+
+footer h2{
+    color: #FFF7B9;
+    font-weight: 500;
+    font-size: 5vw;
+}
+
+strong{
+    color: #ce0101;
+}
+
+.icon-footer{
+    width: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    gap: 5vw;
+    color: #FFF7B9;
+    font-weight: 100;
+}
